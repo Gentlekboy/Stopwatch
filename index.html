@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600&family=Roboto+Mono:wght@600;700&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+    <title>WeJapa Stopwatch</title>
+</head>
+<body>
+    <div class="container">
+    <header>
+        <h2>STOPWATCH PROJECT</h1>
+    </header>
+
+    <main>
+        <section class="watch-container">
+            <h1 class="stopwatch">00.00.00:00</h1>
+        </section>
+
+        <section class="controls">
+            <button onclick="start()"><i class="fas fa-play"></i></button>
+            <button onclick="pause()"><i class="fas fa-pause"></i></button>
+            <button onclick="reset()"><i class="fas fa-undo"></i></button>
+            <button onclick="lap()"><i class="fas fa-stream"></i></button>
+        </section>
+
+        <ul class="laps"></ul>
+    </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
