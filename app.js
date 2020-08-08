@@ -6,6 +6,7 @@ let s = 0;
 let ms = 0;
 let timer;
 
+// To get the start button working
 function start() {
     if (!timer){
         timer = setInterval(run, 10);
@@ -33,10 +34,13 @@ function run() {
     }
 }
 
+// To get the pause button working
 function pause() {
-    stopTimer()
+    clearInterval(timer);
+    timer = false;
 }
 
+// To get the reset button working
 function reset() {
     clearInterval(timer);
     timer = false;
@@ -49,23 +53,21 @@ function reset() {
     resetLaps();
 }
 
-function stopTimer() {
-    clearInterval(timer);
-    timer = false;
+// To reset laps
+function resetLaps() {
+    laps.innerHTML = '';
 }
 
+// To get timer of the stopwatch
 function getTimer() {
     return (h < 10 ? "0" + h : h) + ":" + (m < 10 ? "0" + m : m) + ":" + (s < 10 ? "0" + s : s) + ":" + (ms < 10 ? "0" + ms : ms);
 }
 
+// To get the lap button working
 function lap() {
     if(timer){
         let li = document.createElement('li');
         li.innerText = getTimer();
         laps.append(li);
     }
-}
-
-function resetLaps() {
-    laps.innerHTML = '';
 }

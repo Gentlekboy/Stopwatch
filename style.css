@@ -22,6 +22,7 @@ main{
     justify-content: center;
 }
 
+/* Header Section */
 h2{
     font-family: 'Space Mono', monospace;
     font-size: 1.8rem;
@@ -32,6 +33,7 @@ h2{
     border-bottom: 5px double #e2e2e2;
 }
 
+/* Timer Section */
 .watch-container{
     padding: 60px 10px;
     border-radius: 50%;
@@ -49,6 +51,7 @@ h1{
     color: #e2e2e2;
 }
 
+/* Button Section */
 .controls{
     display: flex;
     align-items: center;
@@ -67,6 +70,7 @@ i{
     font-size: 1.2rem;
 }
 
+/* Lap Records Section */
 ul{
     display: flex;
     flex-wrap: wrap;
@@ -82,6 +86,7 @@ li {
     margin: 5px 20px;
 }
 
+/* Hover States */
 button:hover{
     color: #ffffff;
     background-image: linear-gradient(to right, #2b2b2b, #1d1b1b);
@@ -89,6 +94,7 @@ button:hover{
     transition: 0.8s;
 }
 
+/* Animations */
 @keyframes gradient {
     0% {
       background-position: 0% 100%;
@@ -101,6 +107,7 @@ button:hover{
     }
   }
 
+  /* Media Queries */
   @media screen and (min-width: 360px){
     h2{
         font-size: 2.2rem;
