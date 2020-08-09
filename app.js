@@ -49,8 +49,6 @@ function reset() {
     s = 0;
     ms = 0;
     stopWatch.textContent = getTimer();
-
-    resetLaps();
 }
 
 // To reset laps

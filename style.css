@@ -59,15 +59,20 @@ h1{
 }
 
 button{
-    padding: 8px 15px;
-    margin: 0 0.5rem;
+    padding: 10px 15px;
+    margin: 0 0.6rem;
     border: none;
     cursor: pointer;
     transition: 0.8s;
 }
 
+.fa-play,
+.fa-redo{
+    margin: 0;
+}
+
 i{
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 /* Lap Records Section */
@@ -112,6 +117,12 @@ button:hover{
     h2{
         font-size: 2.2rem;
     }
+    button{
+        padding: 10px 17px;
+    }
+  }
+
+  @media screen and (min-width: 414px){
     button{
         padding: 10px 20px;
         margin: 0 0.7rem;
