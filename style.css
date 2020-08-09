@@ -81,6 +81,7 @@ ul{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    margin-top: 2rem;
 }
 
 li {
@@ -89,6 +90,15 @@ li {
     color: #e2e2e2;
     list-style-type: decimal;
     margin: 5px 20px;
+}
+/* Footer Section */
+p.footer{
+    font-family: 'Mulish', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: center;
+    color: #818181;
+    margin-top: 1rem;
 }
 
 /* Hover States */
