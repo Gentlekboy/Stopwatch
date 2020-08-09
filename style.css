@@ -60,7 +60,7 @@ h1{
 
 button{
     padding: 10px 15px;
-    margin: 0 0.6rem;
+    margin: 0 0.5rem;
     border: none;
     cursor: pointer;
     transition: 0.8s;
@@ -129,6 +129,7 @@ button:hover{
     }
     button{
         padding: 10px 17px;
+        margin: 0 0.6rem;
     }
   }
 
